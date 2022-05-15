@@ -4,106 +4,394 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>TS_Film</title>
+     <title>TSMovies</title>
 
      <!-- link bootstrap -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-     
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
      <!-- link fontawesome -->
      <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
 
+     <!-- link GG Font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Macondo&family=Pacifico&family=Poppins:wght@100&display=swap" rel="stylesheet">
      <!-- link CSS -->
-     <link rel="stylesheet" href="./css/index.scss">
+     <link rel="stylesheet" href="/css/style.css">
+
 </head>
 <body>
      <!-- header -->
-     <div class="film_header">
-          <div class="container pt-5">
-               <div class="row">
-                    <div class="col-md-4 text-center">
-                         <div class="logo">
-                              <h1>TsFilm <i class="fas fa-film"></i></h1>
+     <header>
+          <div class="container-fluid p-0">
+               <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand logo" href="#"></i>TSMovies</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link home" href="#">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                            Thể Loại
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Hành động</a>
+                            <a class="dropdown-item" href="#">Võ thuật</a>
+                            <a class="dropdown-item" href="#">Tình cảm</a>
+                            <a class="dropdown-item" href="#">Tâm lý</a>
+                            <a class="dropdown-item" href="#">Viễn tưởng</a>
+                            <a class="dropdown-item" href="#">Kinh dị</a>
+                          </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                           Quốc Gia
+                         </a>
+                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <a class="dropdown-item" href="#">Việt Nam</a>
+                           <a class="dropdown-item" href="#">Mỹ</a>
+                           <a class="dropdown-item" href="#">Trung Quốc</a>
+                           <a class="dropdown-item" href="#">Hàn Quốc</a>
+                           <a class="dropdown-item" href="#">Ấn Độ</a>
                          </div>
+                       </li>
+                       <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                           Năm Sản Xuất
+                         </a>
+                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <a class="dropdown-item" href="#">2022</a>
+                           <a class="dropdown-item" href="#">2021</a>
+                           <a class="dropdown-item" href="#">2020</a>
+                           <a class="dropdown-item" href="#">2019</a>
+                           <a class="dropdown-item" href="#">2018</a>
+                         </div>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link" href="#">Danh Sách Phim</a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link" href="#">Trailer Phim</a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link" href="#">Giới Thiệu</a>
+                       </li>
+                      </ul>
                     </div>
-
-                    <div class="col-md-4 text-center">
-                         <input type="text" value="Tìm Kiếm" class="text-secondary">
-                         <input type="submit" value="Tìm">
-                    </div>
-               </div>
+                  </nav>
           </div>
-     </div>
+     </header>
      <!-- header end -->
 
-     <!-- nav -->
-     <div class="film_nav">
-          <div class="container">
-               <div class="row">
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                         <div class="container-fluid">
-                           <a class="navbar-brand" href="#">TRANG CHỦ</a>
-                           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                             <span class="navbar-toggler-icon"></span>
-                           </button>
-                           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                              <li class="nav-item dropdown">
-                                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                     THỂ LOẠI
-                                   </a>
-                                   <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
-                                     <li><a class="dropdown-item" href="#">Hành Động</a></li>
-                                     <li><a class="dropdown-item" href="#">Võ Thuật</a></li>
-                                     <li><a class="dropdown-item" href="#">Tình Cảm</a></li>
-                                     <li><a class="dropdown-item" href="#">Hài Hước</a></li>
-                                     <li><a class="dropdown-item" href="#">Hoạt Hình</a></li>
-                                   </ul>
-                                 </li>
-                                 <li class="nav-item dropdown">
-                                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                     QUỐC GIA
-                                   </a>
-                                   <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
-                                     <li><a class="dropdown-item" href="#">Việt Nam</a></li>
-                                     <li><a class="dropdown-item" href="#">Mỹ</a></li>
-                                     <li><a class="dropdown-item" href="#">Trung Quốc</a></li>
-                                     <li><a class="dropdown-item" href="#">Hàn Quốc</a></li>
-                                   </ul>
-                                 </li>
-                                 <li class="nav-item dropdown">
-                                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                     NĂM SẢN XUẤT
-                                   </a>
-                                   <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
-                                     <li><a class="dropdown-item" href="#">2022</a></li>
-                                     <li><a class="dropdown-item" href="#">2021</a></li>
-                                     <li><a class="dropdown-item" href="#">2020</a></li>
-                                     <li><a class="dropdown-item" href="#">2019</a></li>
-                                   </ul>
-                                 </li>
-                               <li class="nav-item">
-                                 <a class="nav-link active" aria-current="page" href="#">
-                                   DANH SÁCH PHIM</a>
-                               </li>
-                               <li class="nav-item">
-                                   <a class="nav-link active" aria-current="page" href="#">
-                                     TRAILERS PHIM</a>
-                                 </li>
-                              <li class="nav-item">
-                                   <a class="nav-link active" aria-current="page" href="#">
-                                     GIỚI THIỆU</a>
-                              </li>
-                             </ul>
-                           </div>
-                         </div>
-                       </nav>
-               </div>
-          </div>
+     <!-- sidebar -->
+     <div class="sidebar">
+          <a href="#"><i class="fas fa-search left-icon"></i></a>
+          <a href="#"><i class="fas fa-home left-icon"></i></a>
      </div>
-     <!-- nav end -->
+     <!-- sidebar end -->
 
-     
+     <!-- main -->
+     <main class="pl-5">
+          <section class="section-1 pt-5">
+               <div>
+                    <h3>PHIM ĐỀ CỬ</h3>
+               </div>
+               <div class="row m-5">
+                    <div class="col-md-3 text-center">
+                         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                   <a href="#"><img src="/img/a-dog-way-home.jpeg" class="d-block ptr" width="90%"></a>
+                                   <a href="#"><p>A dog way home</p></a>
+                                </div>
+                                <div class="carousel-item">
+                                   <a href="#"><img src="/img/a-dogs-journey.jpeg" class="d-block ptr" width="90%"></a>
+                                   <a href="#"><p>A dogs journey</p></a>
+                                </div>
+                                <div class="carousel-item">
+                                   <a href="#"><img src="/img/angel-has-fallen.jpeg" class="d-block ptr" width="90%"></a>
+                                   <a href="#"><p>Angle has fallen</p></a>
+                                </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                   <a href="#">
+                                        <img src="/img/angry-bird-2.jpeg" class="d-block ptr" width="90%">
+                                        <p>Angry bird 2</p>
+                                   </a>
+                                </div>
+                                <div class="carousel-item">
+                                   <a href="#">
+                                        <img src="img/anna.jpeg" class="d-block ptr" width="90%">
+                                        <p>Anna</p>
+                                   </a>
+                                </div>
+                                <div class="carousel-item">
+                                   <a href="#">
+                                        <img src="img/avenger-3.jpeg" class="d-block ptr" width="90%">
+                                        <p>Avenger 3</p>
+                                   </a>
+                                </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                   <a href="#">
+                                        <img src="/img/avenger-4-endgame.jpeg" class="d-block ptr" width="90%">
+                                        <p>Avenger 4: Endgame</p>
+                                   </a>
+                                </div>
+                                <div class="carousel-item">
+                                   <a href="#">
+                                        <img src="/img/bad-time-at-the-el-royale.jpeg" class="d-block ptr" width="90%">
+                                        <p>Bad time at the el royale</p>
+                                   </a>
+                                </div>
+                                <div class="carousel-item">
+                                   <a href="#">
+                                        <img src="/img/confidential-assignment.jpeg" class="d-block ptr" width="90%">
+                                        <p>Confidential assignment</p>
+                                   </a>
+                                </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                   <a href="#">
+                                        <img src="/img/crawl.jpeg" class="d-block ptr" width="90%">
+                                        <p>Crawl</p>
+                                   </a>
+                                </div>
+                                <div class="carousel-item">
+                                   <a href="#">
+                                        <img src="/img/dora-and-the-lost-city-of-gold.jpeg" class="d-block ptr" width="90%">
+                                        <p>Dora and the lost city of gold</p>
+                                   </a>
+                                </div>
+                                <div class="carousel-item">
+                                   <a href="#">
+                                        <img src="img/doraemon-moon-exloration.jpeg" class="d-block ptr" width="90%">
+                                        <p>Doraemon moon exloration</p>
+                                   </a>
+                                </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>            
+          </section>
+
+          <section class="section-2">
+               <div>
+                   <h3>DANH SÁCH PHIM</h3> 
+                   <div class="row m-5">
+                         <div class="col-md-2 text-center">
+                              <a href="#">
+                                   <img src="img/exit.jpeg" width="100%">
+                                   <p>Exit</p>
+                              </a>
+                         </div>
+                         <div class="col-md-2 text-center">
+                              <a href="#">
+                                   <img src="img/fast-and-furious-hobbs-and-shaw.jpeg" width="100%">
+                                   <p>Fast and furious: Hobbs and Shaw</p>
+                              </a>
+                         </div>
+                         <div class="col-md-2 text-center">
+                              <a href="#">
+                                   <img src="img/geostorm.jpeg" width="100%">
+                                   <p>GeoStorm</p>
+                              </a>
+                         </div>
+                         <div class="col-md-2 text-center">
+                              <a href="#">
+                                   <img src="img/godzilla-king-of-monster.jpeg" width="100%">
+                                   <p>Godzila: King of monster</p>
+                              </a>
+                         </div>
+                         <div class="col-md-2 text-center">
+                              <a href="#">
+                                   <img src="img/haiphuongposter.jpeg" width="100%">
+                                   <p>Hai Phượng</p>
+                              </a>
+                         </div>
+                         <div class="col-md-2 text-center">
+                              <a href="#">
+                                   <img src="img/homme-tale.jpeg" width="100%">
+                                   <p>Home tale</p>
+                              </a>
+                         </div>
+                         <div class="col-md-2 text-center">
+                              <a href="#">
+                                   <img src="img/it-chapter-2.jpeg" width="100%">
+                                   <p>It Chapter 2</p>
+                              </a>
+                         </div>
+                         <div class="col-md-2 text-center">
+                              <a href="#">
+                                   <img src="img/john-wick-2.jpeg" width="100%">
+                                   <p>John wick 2</p>
+                              </a>
+                         </div>
+                         <div class="col-md-2 text-center">
+                              <a href="#">
+                                   <img src="img/johnwick-3.jpeg" width="100%">
+                                   <p>John wick 3</p>
+                              </a>
+                         </div>
+                         <div class="col-md-2 text-center">
+                              <a href="#">
+                                   <img src="img/jurrassic-world-2.jpeg" width="100%">
+                                   <p>Jurrassic world 2</p>
+                              </a>
+                         </div>
+                         <div class="col-md-2 text-center">
+                              <a href="#">
+                                   <img src="img/kung-fu-league.jpeg" width="100%">
+                                   <p>Kungfu league</p>
+                              </a>
+                         </div>
+                         <div class="col-md-2 text-center">
+                              <a href="#">
+                                   <img src="img/lion-king.jpeg" width="100%">
+                                   <p>Lion King</p>
+                              </a>
+                         </div>
+                         <div class="col-md-2 text-center">
+                              <a href="#">
+                                   <img src="img/men-in-black-international.jpeg" width="100%">
+                                   <p>Men in black international</p>
+                              </a>
+                         </div>
+                         <div class="col-md-2 text-center">
+                              <a href="#">
+                                   <img src="img/my-first-client.jpeg" width="100%">
+                                   <p>My first client</p>
+                              </a>
+                         </div>
+                         <div class="col-md-2 text-center">
+                              <a href="#">
+                                   <img src="img/rampage.jpeg" width="100%">
+                                   <p>Rampage</p>
+                              </a>
+                         </div>
+                         <div class="col-md-2 text-center">
+                              <a href="#">
+                                   <img src="img/sanju.jpeg" width="100%">
+                                   <p>Sanju</p>
+                              </a>
+                         </div>
+                         <div class="col-md-2 text-center">
+                              <a href="#">
+                                   <img src="img/show-dog.jpeg" width="100%">
+                                   <p>Show dog</p>
+                              </a>
+                         </div>
+                         <div class="col-md-2 text-center">
+                              <a href="#">
+                                   <img src="img/spider-man-far-from-home.jpeg" width="100%">
+                                   <p>Spiderman: Far from home</p>
+                              </a>
+                         </div>
+                         <div class="col-md-2 text-center">
+                              <a href="#">
+                                   <img src="img/steal-my-heart.jpeg" width="100%">
+                                   <p>Steal my heart</p>
+                              </a>
+                         </div>
+                         <div class="col-md-2 text-center">
+                              <a href="#">
+                                   <img src="img/stuber.jpeg" width="100%">
+                                   <p>Stuber</p>
+                              </a>
+                         </div>
+                         <div class="col-md-2 text-center">
+                              <a href="#">
+                                   <img src="img/the-secret-life-of-pets.jpeg" width="100%">
+                                   <p>The secret life of pets</p>
+                              </a>
+                         </div>
+                         <div class="col-md-2 text-center">
+                              <a href="#">
+                                   <img src="img/upgrade.jpeg" width="100%">
+                                   <p>Upgrade</p>
+                              </a>
+                         </div>
+                         <div class="col-md-2 text-center">
+                              <a href="#">
+                                   <img src="img/war-for-the-planet-of-the-apes.jpeg" width="100%">
+                                   <p>War for the planet of the aqes</p>
+                              </a>
+                         </div>
+                         <div class="col-md-2 text-center">
+                              <a href="#">
+                                   <img src="img/x-men-8-dark-phoenix.jpeg" width="100%">
+                                   <p>X-Men 8: Dark Phoenix</p>
+                              </a>
+                         </div>
+                   </div>
+               </div>
+          </section>
+     </main>
+     <!-- main end -->
+
+     <!-- footer -->
+     <footer>
+          <div class="container-fluid p-0">
+              <div class="row">
+                  <div class="col-md-5 col-sm-5">
+                      <h4 class="text-light">Liên Hệ</h4>
+                      <p class="text-muted">TEL:080-xxx-xxx</p>
+                      <p class="text-muted">Email:CaoBoiDuoiBongTreXanh@gmail.com</p>
+                  </div>
+  
+                  <div class="col-md-5 col-sm-12">
+                      <h4 class="text-light">Newsletter</h4>
+                      <p class="text-muted">Stay Updated</p>
+  
+                      <form class="form-inline">
+                        <div class="col pl-0">
+                          <div class="input-group pr-5">
+                            <input type="text" class="form-control bg-dark text-white" id="inlineFormInputGroupUsername2" placeholder="Email">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">
+                                <i class="fas fa-arrow-right"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+  
+                  </div>
+  
+                  <div class="col-md-2 col-sm-12">
+                      <h4 class="text-light">Follow us</h4>
+                      <p class="text-muted">Let us be social</p>
+                      <div class="column">
+                          <i class="fab fa-facebook-f"></i>
+                          <i class="fab fa-instagram"></i>
+                          <i class="fab fa-twitter"></i>
+                          <i class="fab fa-youtube"></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+     <!-- footer end -->
 </body>
 </html>
