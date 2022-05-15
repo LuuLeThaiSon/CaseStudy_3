@@ -14,7 +14,9 @@ body {
 }
 
 .navbar {
+  font-family: "Macondo", cursive;
   background: black;
+  font-size: 20px;
 }
 .navbar a {
   color: white;
@@ -23,16 +25,12 @@ body {
   color: white;
 }
 
-.home {
-  font-weight: bold;
-}
-
 .navbar-brand {
   padding-left: 8rem;
 }
 
 .nav-item:last-child {
-  padding-right: 10rem;
+  padding-right: 5rem;
 }
 
 .nav-item {
@@ -67,23 +65,35 @@ body {
 
 section h3 {
   padding-left: 35px;
+  font-family: "Shadows Into Light", cursive;
+}
+
+section a {
+  font-family: "Cinzel", serif;
+  text-decoration: none;
+  color: white;
+}
+section p {
+  padding: 10px 20px;
+}
+section img {
+  transition: all 0.3s ease;
+}
+
+section a:hover {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+section img:hover {
+  transform: scale(1.1);
 }
 
 footer {
+  font-family: "Macondo", cursive;
   background-color: black;
   padding: 14vmin 18vmin;
-}
-
-footer input::placeholder {
-  color: white !important;
-}
-
-footer .column i {
-  color: #dd2476;
-}
-
-footer .column i {
-  padding: 0 0.5em;
 }
 
 /*# sourceMappingURL=style.css.map */
