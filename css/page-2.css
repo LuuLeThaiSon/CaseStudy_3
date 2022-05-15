@@ -1,0 +1,35 @@
+
+.path {
+     margin-top: 50px;
+     margin-bottom: 50px;
+     padding-left: 10px;
+     border: 1px solid;
+     border-color: rgb(201, 177, 177);
+     border-radius: 5px;
+}
+
+.path a, .card a {
+     text-decoration: none;
+     color: white;
+}
+
+.title .content-1 {
+     padding-bottom: 50px;
+     border: 1px solid;
+     border-color: rgb(201, 177, 177);
+     border-radius: 5px;
+     padding: 10px;
+}
+
+.content-2 {
+     margin-top: 50px;
+     margin-bottom: 50px;
+     padding: 10px;
+     border: 1px solid;
+     border-color: rgb(201, 177, 177);
+     border-radius: 5px;
+}
+
+.card {
+     background-color: rgb(26, 25, 25);
+}
