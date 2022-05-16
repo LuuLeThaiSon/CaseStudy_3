@@ -1,6 +1,9 @@
 * {
      box-sizing: border-box;
 }
+.main {
+     font-family: 'Cinzel', serif;
+}
 
 .conten-2, .conten-3 {
      padding-bottom: 50px;
@@ -21,7 +24,7 @@
 }
 
 .conten-3 {
-     right: -50px;
+     right: -30px;
 }
 
 .conten-3-btn {
