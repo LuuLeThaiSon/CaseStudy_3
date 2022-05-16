@@ -1,4 +1,8 @@
 
+main {
+     font-family: 'Cinzel', serif;
+}
+
 .path {
      margin-top: 50px;
      margin-bottom: 50px;
@@ -21,6 +25,30 @@
      padding: 10px;
 }
 
+.content-1 p {
+     font-weight: bold;
+} 
+.content-1 span {
+     font-weight: normal;
+}
+
+h5, h4 {
+     font-weight: bold;
+}
+
+h5 {
+     padding-bottom: 20px;
+}
+
+.content-1-btn {
+     transition: all .3s ease;
+}
+
+.content-1-btn:hover {
+     transform: scale(1.05);
+     font-weight: bold;
+}
+
 .content-2 {
      margin-top: 50px;
      margin-bottom: 50px;
@@ -32,4 +60,12 @@
 
 .card {
      background-color: rgb(26, 25, 25);
+}
+
+.card h4 {
+     padding-bottom: 20px;
+}
+
+.comment {
+     padding: 50px;
 }
