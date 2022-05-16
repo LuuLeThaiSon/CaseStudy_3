@@ -1,0 +1,20 @@
+* {
+     box-sizing: border-box;
+}
+
+.conten-2, .conten-3 {
+     padding-bottom: 50px;
+     border: 1px solid;
+     border-color: rgb(201, 177, 177);
+     border-radius: 5px;
+     padding: 10px;
+}
+
+.video-btn {
+     margin: 20px 10px;
+}
+
+.conten-3 {
+     /* margin-left: 10px; */
+     right: -50px;
+}

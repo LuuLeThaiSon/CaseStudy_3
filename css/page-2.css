@@ -1,4 +1,6 @@
-
+* {
+     box-sizing: border-box;
+}
 main {
      font-family: 'Cinzel', serif;
 }
@@ -42,6 +44,10 @@ h5 {
 
 .content-1-btn {
      transition: all .3s ease;
+}
+
+.button {
+     padding-right: 15px;
 }
 
 .content-1-btn:hover {
