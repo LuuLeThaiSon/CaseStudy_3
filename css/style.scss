@@ -48,6 +48,10 @@ body {
      color: black;
 }
 
+.navbar-expand-lg .col-md-5 {
+     padding-left: 100px;
+}
+
 .sidebar {
      width: 50px;
      height: 100%;
@@ -104,4 +108,11 @@ footer {
      font-family: 'Macondo', cursive;
      background-color: black;
      padding: 14vmin 18vmin;
+}
+
+@media only screen and(max-width=991px) {
+     .navbar-expand-lg .navbar-collapse{
+          padding: 20px;
+          text-align: right;
+     }
 }
