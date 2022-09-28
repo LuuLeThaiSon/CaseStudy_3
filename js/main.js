@@ -10,5 +10,7 @@ function login() {
      }
 }
 
-
+function game() {
+     window.location.href = "number-guessing.html"
+}
 
