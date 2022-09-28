@@ -4,7 +4,7 @@ function login() {
 
 
      if (userName=="admin"&&password=="admin") {
-          window.location.href= "index.html"
+          window.location.href= "index-2.html"
      } else {
           document.getElementById("mess").innerHTML = "Sai tên đăng nhập hoặc mật khẩu"
      }
