@@ -21,6 +21,23 @@
      <link rel="stylesheet" href="./css/style.css">
 
 </head>
+
+<style>
+     #display button {
+          width: 100px;
+          height: 40px;
+          margin-top: -100px;
+          border-radius: 10px;
+          font-weight: bold;
+     }
+
+     #display button:hover {
+          transform: scale(1.05);
+          background-color: black;
+          color: white;
+     }
+</style>
+
 <body>
      <!-- header -->
      <header>
@@ -205,15 +222,15 @@
           <section class="section-2">
                <div>
                    <h3>DANH SÁCH PHIM</h3> 
-                   <button>Thêm Phim</button>
+                   <!-- <button>Thêm Phim</button> -->
                    <div id="display" class="row m-5">
                          <!-- <div class="col-md-2 text-center">
                               <a href="#">
                                    <img src="./img/exit.jpeg" width="100%">
                                    <p>Exit</p>
                               </a>
-                              <button>Xóa</button>
-                              <button>Sửa</button>
+                              <button onclick= "deleteMovie()">Xóa</button>
+                              <button onclick="editMovie()">Sửa</button>
                          </div> -->
                    </div>
                </div>

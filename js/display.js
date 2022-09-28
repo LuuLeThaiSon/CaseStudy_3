@@ -31,17 +31,27 @@ function display() {
           content += "<div class='col-md-2 text-center'>"
           content += "<a href='#'><img src=./"+ arrMovie[i].image + " width='100%'></a>" 
           content += '<p>' + arrMovie[i].name + '</p>' 
-          content += '</a><button onclick="deleteMovie('+ i +')">Xóa</button><button onclick="editMovie()">Sửa</button></div>'
+          content += '</a><button onclick="deleteMovie('+ i +')">Xóa</button><button onclick="editMovie('+ i +')">Sửa</button></div>'
      }
      document.getElementById("display").innerHTML = content;
 }
 
 function deleteMovie(i) {
-     // let warring = prompt("Bạn có muốn xóa phim " +arrMovie[i].name+ " không? YES/NO")
-     // if (warring=="YES") {
+     let warring = confirm("Bạn có muốn xóa phim " +arrMovie[i].name+ " không?")
+     if (warring==true) {
           arrMovie.splice(i,1)
-     // }
+     }
+     display()
+}
+
+function editMovie(i) {
+     let editName = prompt("Thay đổi tên phim " + arrMovie[i].name + "thành")
+     if (editName!==null && editName!=="" ) {
+          arrMovie[i].name = editName;
+     } 
+     console.log(editName);
      display()
 }
 
 display()
+
