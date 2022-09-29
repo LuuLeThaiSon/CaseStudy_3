@@ -32,7 +32,7 @@ function display(data) {
           content += "<div class='col-md-2 text-center'>"
           content += "<a href='#'><img src=./"+ data[i].image + " width='100%'></a>" 
           content += '<p>' + data[i].name + '</p>' 
-          content += '</a><button onclick="deleteMovie('+ i +')">Xóa</button><button onclick="editMovie('+ i +')">Sửa</button></div>'
+          content += '<button onclick="deleteMovie('+ i +')">Xóa</button><button onclick="editMovie('+ i +')">Sửa</button></div>'
      }
      document.getElementById("display").innerHTML = content;
 }
