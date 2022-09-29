@@ -32,9 +32,10 @@ function display(data) {
           content += "<div class='col-md-2 text-center'>"
           content += "<a href='#'><img src="+ data[i].image + " width='100%'></a>" 
           content += '<p>' + data[i].name + '</p>' 
-          content += '<button onclick="deleteMovie('+ i +')">Xóa</button><button onclick="editMovie('+ i +')">Sửa</button></div>'
+          content += '<button onclick="deleteMovie('+ i +')">Xóa</button><button data-toggle="modal" data-target="#edit" onclick="edit('+i+')">Sửa</button></div>'
      }
      document.getElementById("display").innerHTML = content;
+     document.getElementById("count").innerHTML = "Số lượng phim hiện tại: " + data.length; 
 }
 
 function addMovie() {
@@ -54,12 +55,25 @@ function deleteMovie(i) {
      display(arrMovie)
 }
 
-function editMovie(i) {
-     let editName = prompt("Thay đổi tên phim " + arrMovie[i].name + " thành")
-     if (editName!==null && editName!=="" ) {
-          arrMovie[i].name = editName;
-     } 
-     console.log(editName);
+
+
+var j;
+
+function edit(i) {
+     document.getElementById('editMovieName').value = arrMovie[i].name;
+     document.getElementById('editMovieImage').value = arrMovie[i].image;
+
+     j = i;
+}
+
+function editMovie() {
+     let editMovieName = document.getElementById('editMovieName').value;
+     let editMovieImage = document.getElementById('editMovieImage').value;
+     let arrEdit = new MovieList(editMovieName,editMovieImage)
+     if (editMovieName!==null && editMovieName!=="" && editMovieImage!==null && editMovieImage!=="") {
+          arrMovie[j] = arrEdit
+     }
+
      display(arrMovie)
 }
 
