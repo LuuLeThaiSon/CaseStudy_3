@@ -49,7 +49,7 @@ body {
 }
 
 .sidebar {
-  width: 70px;
+  width: 90px;
   height: 100%;
   background-color: black;
   position: fixed;
@@ -59,17 +59,29 @@ body {
   padding-top: 400px;
 }
 
+.sidebar i, .sidebar a {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 200px;
+}
+
 .left-icon {
-  color: white;
-  font-size: 40px;
-  margin-left: 10px;
+  color: gray;
+  font-size: 45px;
+  padding-left: 0px;
+  margin-left: 20px;
   margin-bottom: 300px;
-  
+}
+
+.left-icon:hover {
+  cursor: pointer;
+  transform: scale(1.5);
 }
 
 section h3 {
   padding-left: 35px;
   font-family: "Shadows Into Light", cursive;
+  margin-left: 22px;
 }
 
 section a {
@@ -96,6 +108,25 @@ section a:hover {
 }
 
 section img:hover {
+  transform: scale(1.05);
+}
+.addMovie h3 {
+  margin-left: 22px;
+}
+.addMovie .add-btn {
+  margin-left: 60px;
+  margin-top: 20px;
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 25px;
+  background-color: gray;
+  border: none;
+  color: whitesmoke;
+}
+
+.addMovie .add-btn:hover {
+  cursor: pointer;
   transform: scale(1.05);
 }
 
