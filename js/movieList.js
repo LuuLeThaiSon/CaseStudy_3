@@ -12,7 +12,7 @@ class MovieList {
      }
 
      getImage() {
-          return this.getImage;
+          return this.image;
      }
 
      setName(name) {
