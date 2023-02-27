@@ -1,16 +1,14 @@
 * {
      box-sizing: border-box;
 }
-main {
+.main {
      font-family: 'Cinzel', serif;
 }
 
 .path {
-     margin-top: 50px;
      margin-bottom: 50px;
      padding-left: 10px;
-     border: 1px solid;
-     border-color: rgb(201, 177, 177);
+     border: 1px solid rgb(201, 177, 177);
      border-radius: 5px;
 }
 
@@ -21,8 +19,7 @@ main {
 
 .title .content-1 {
      padding-bottom: 50px;
-     border: 1px solid;
-     border-color: rgb(201, 177, 177);
+     border: 1px solid rgb(201, 177, 177);
      border-radius: 5px;
      padding: 10px;
 }
@@ -74,4 +71,8 @@ h5 {
 
 .comment {
      padding: 50px;
+}
+
+.test {
+
 }
